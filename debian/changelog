@@ -1,0 +1,7 @@
+ros-indigo-yaml-cpp-0-3 (0.3.0-0saucy) saucy; urgency=high
+
+  * renamespaced library and headers (yaml->yaml-0.3) to avoid system v0.5 conflict
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Sun, 01 Feb 2015 15:00:00 -0000
+
+
