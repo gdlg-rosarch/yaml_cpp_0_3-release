@@ -3,7 +3,7 @@
 #include "yaml-cpp-0.3/exceptions.h"
 #include "exp.h"
 
-namespace YAML
+namespace YAML_0_3
 {
 	Scanner::SimpleKey::SimpleKey(const Mark& mark_, int flowLevel_)
 		: mark(mark_), flowLevel(flowLevel_), pIndent(0), pMapStart(0), pKey(0)

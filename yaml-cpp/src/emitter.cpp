@@ -5,7 +5,7 @@
 #include "yaml-cpp-0.3/exceptions.h"
 #include <sstream>
 
-namespace YAML
+namespace YAML_0_3
 {	
 	Emitter::Emitter(): m_pState(new EmitterState)
 	{

@@ -7,7 +7,7 @@
 #include <sstream>
 #include <iomanip>
 
-namespace YAML
+namespace YAML_0_3
 {
 	namespace Utils
 	{
@@ -241,7 +241,7 @@ namespace YAML
 					out << "\\\\";
 				else if (codePoint < 0x20 || (codePoint >= 0x80 && codePoint <= 0xA0)) // Control characters and non-breaking space
 					WriteDoubleQuoteEscapeSequence(out, codePoint);
-				else if (codePoint == 0xFEFF) // Byte order marks (ZWNS) should be escaped (YAML 1.2, sec. 5.2)	
+				else if (codePoint == 0xFEFF) // Byte order marks (ZWNS) should be escaped (YAML_0_3 1.2, sec. 5.2)	
 					WriteDoubleQuoteEscapeSequence(out, codePoint);
 				else if (escapeNonAscii && codePoint > 0x7E)
 					WriteDoubleQuoteEscapeSequence(out, codePoint);

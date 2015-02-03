@@ -3,7 +3,7 @@
 #include "exp.h"
 #include "yaml-cpp-0.3/exceptions.h"
 
-namespace YAML
+namespace YAML_0_3
 {
 	const std::string ScanVerbatimTag(Stream& INPUT)
 	{
