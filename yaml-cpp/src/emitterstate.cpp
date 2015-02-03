@@ -2,7 +2,7 @@
 #include "yaml-cpp-0.3/exceptions.h"
 #include <limits>
 
-namespace YAML
+namespace YAML_0_3
 {
 	EmitterState::EmitterState(): m_isGood(true), m_curIndent(0), m_requiresSoftSeparation(false), m_requiresHardSeparation(false)
 	{

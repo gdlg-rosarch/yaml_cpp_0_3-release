@@ -4,7 +4,7 @@ file(GLOB test_old_api_sources old-api/[a-z]*.cpp)
 
 list(APPEND test_sources ${test_old_api_sources})
 
-include_directories(${YAML_CPP_SOURCE_DIR}/test)
+include_directories(${YAML_0_3_CPP_SOURCE_DIR}/test)
 
 add_executable(run-tests
 	${test_sources}

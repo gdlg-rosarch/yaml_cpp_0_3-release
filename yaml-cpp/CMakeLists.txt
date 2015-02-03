@@ -19,12 +19,12 @@ include(CheckCXXCompilerFlag)
 ###
 ### Project settings
 ###
-project(YAML_CPP)
+project(YAML_0_3_CPP)
 
-set(YAML_CPP_VERSION_MAJOR "0")
-set(YAML_CPP_VERSION_MINOR "3")
-set(YAML_CPP_VERSION_PATCH "0")
-set(YAML_CPP_VERSION "${YAML_CPP_VERSION_MAJOR}.${YAML_CPP_VERSION_MINOR}.${YAML_CPP_VERSION_PATCH}")
+set(YAML_0_3_CPP_VERSION_MAJOR "0")
+set(YAML_0_3_CPP_VERSION_MINOR "3")
+set(YAML_0_3_CPP_VERSION_PATCH "0")
+set(YAML_0_3_CPP_VERSION "${YAML_0_3_CPP_VERSION_MAJOR}.${YAML_0_3_CPP_VERSION_MINOR}.${YAML_0_3_CPP_VERSION_PATCH}")
 
 enable_testing()
 
@@ -33,8 +33,8 @@ enable_testing()
 ### Project options
 ###
 ## Project stuff
-option(YAML_CPP_BUILD_TOOLS "Enable testing and parse tools" OFF)
-option(YAML_CPP_BUILD_CONTRIB "Enable contrib stuff in library" OFF)
+option(YAML_0_3_CPP_BUILD_TOOLS "Enable testing and parse tools" OFF)
+option(YAML_0_3_CPP_BUILD_CONTRIB "Enable contrib stuff in library" OFF)
 
 ## Build options
 # --> General
@@ -60,12 +60,12 @@ file(GLOB sources "src/[a-zA-Z]*.cpp")
 file(GLOB public_headers "include/yaml-cpp-0.3/[a-zA-Z]*.h")
 file(GLOB private_headers "src/[a-zA-Z]*.h")
 
-if(YAML_CPP_BUILD_CONTRIB)
+if(YAML_0_3_CPP_BUILD_CONTRIB)
 	file(GLOB contrib_sources "src/contrib/[a-zA-Z]*.cpp")
 	file(GLOB contrib_public_headers "include/yaml-cpp/contrib/[a-zA-Z]*.h")
 	file(GLOB contrib_private_headers "src/contrib/[a-zA-Z]*.h")
 else()
-	add_definitions(-DYAML_CPP_NO_CONTRIB)
+	add_definitions(-DYAML_0_3_CPP_NO_CONTRIB)
 endif()
 
 if(VERBOSE)
@@ -77,8 +77,8 @@ if(VERBOSE)
 	message(STATUS "contrib_private_headers: ${contrib_private_headers}")
 endif()
 
-include_directories(${YAML_CPP_SOURCE_DIR}/include)
-include_directories(${YAML_CPP_SOURCE_DIR}/src)
+include_directories(${YAML_0_3_CPP_SOURCE_DIR}/include)
+include_directories(${YAML_0_3_CPP_SOURCE_DIR}/src)
 
 
 ###
@@ -236,8 +236,8 @@ add_library(yaml-cpp-0.3
 )
 
 set_target_properties(yaml-cpp-0.3 PROPERTIES
-	VERSION "${YAML_CPP_VERSION}"
-	SOVERSION "${YAML_CPP_VERSION_MAJOR}.${YAML_CPP_VERSION_MINOR}"
+	VERSION "${YAML_0_3_CPP_VERSION}"
+	SOVERSION "${YAML_0_3_CPP_VERSION_MAJOR}.${YAML_0_3_CPP_VERSION_MINOR}"
 	PROJECT_LABEL "yaml-cpp ${LABEL_SUFFIX}"
 )
 
@@ -276,7 +276,7 @@ endif()
 ###
 ### Extras
 ###
-if(YAML_CPP_BUILD_TOOLS)
+if(YAML_0_3_CPP_BUILD_TOOLS)
 	#add_subdirectory(test)
 	add_subdirectory(util)
 endif()

@@ -3,7 +3,7 @@
 #include "yaml-cpp-0.3/node.h"
 #include <cassert>
 
-namespace YAML
+namespace YAML_0_3
 {
 	NodeBuilder::NodeBuilder(Node& root): m_root(root), m_initializedRoot(false), m_finished(false)
 	{

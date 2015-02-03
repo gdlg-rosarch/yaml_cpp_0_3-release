@@ -1,7 +1,7 @@
 #include "yaml-cpp-0.3/binary.h"
 #include "yaml-cpp-0.3/node.h"
 
-namespace YAML
+namespace YAML_0_3
 {
     static const char encoding[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 
