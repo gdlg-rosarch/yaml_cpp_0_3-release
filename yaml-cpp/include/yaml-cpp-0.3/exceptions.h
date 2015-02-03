@@ -12,15 +12,15 @@
 #include <string>
 #include <sstream>
 
-namespace YAML
+namespace YAML_0_3
 {
 	// error messages
 	namespace ErrorMsg
 	{
-		const char * const YAML_DIRECTIVE_ARGS    = "YAML directives must have exactly one argument";
-		const char * const YAML_VERSION           = "bad YAML version: ";
-		const char * const YAML_MAJOR_VERSION     = "YAML major version too large";
-		const char * const REPEATED_YAML_DIRECTIVE= "repeated YAML directive";
+		const char * const YAML_0_3_DIRECTIVE_ARGS    = "YAML_0_3 directives must have exactly one argument";
+		const char * const YAML_0_3_VERSION           = "bad YAML_0_3 version: ";
+		const char * const YAML_0_3_MAJOR_VERSION     = "YAML_0_3 major version too large";
+		const char * const REPEATED_YAML_0_3_DIRECTIVE= "repeated YAML_0_3 directive";
 		const char * const TAG_DIRECTIVE_ARGS     = "TAG directives must have exactly two arguments";
 		const char * const REPEATED_TAG_DIRECTIVE = "repeated TAG directive";
 		const char * const CHAR_IN_TAG_HANDLE     = "illegal character found while scanning tag handle";

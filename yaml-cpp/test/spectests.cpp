@@ -9,7 +9,7 @@ namespace Test
 			TEST ret;
 			try {
 				ret = test();
-			} catch(const YAML::Exception& e) {
+			} catch(const YAML_0_3::Exception& e) {
 				ret.ok = false;
 				ret.error = std::string("  Exception caught: ") + e.what();
 			}
@@ -78,8 +78,8 @@ namespace Test
 		RunSpecTest(&Spec::MultiLineComments, "6.11", "Multi-Line Comments", passed, total);
 		RunSpecTest(&Spec::SeparationSpacesII, "6.12", "Separation Spaces", passed, total);
 		RunSpecTest(&Spec::ReservedDirectives, "6.13", "Reserved Directives", passed, total);
-		RunSpecTest(&Spec::YAMLDirective, "6.14", "YAML Directive", passed, total);
-		RunSpecTest(&Spec::InvalidRepeatedYAMLDirective, "6.15", "Invalid Repeated YAML Directive", passed, total);
+		RunSpecTest(&Spec::YAML_0_3Directive, "6.14", "YAML_0_3 Directive", passed, total);
+		RunSpecTest(&Spec::InvalidRepeatedYAML_0_3Directive, "6.15", "Invalid Repeated YAML_0_3 Directive", passed, total);
 		RunSpecTest(&Spec::TagDirective, "6.16", "Tag Directive", passed, total);
 		RunSpecTest(&Spec::InvalidRepeatedTagDirective, "6.17", "Invalid Repeated Tag Directive", passed, total);
 		RunSpecTest(&Spec::PrimaryTagHandle, "6.18", "Primary Tag Handle", passed, total);

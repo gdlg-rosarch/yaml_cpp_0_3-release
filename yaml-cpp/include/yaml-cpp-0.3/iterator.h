@@ -8,12 +8,12 @@
 #include "yaml-cpp-0.3/dll.h"
 #include <memory>
 
-namespace YAML
+namespace YAML_0_3
 {
 	class Node;
 	struct IterPriv;
 
-	class YAML_CPP_API Iterator
+	class YAML_0_3_CPP_API Iterator
 	{
 	public:
 		Iterator();
@@ -29,8 +29,8 @@ namespace YAML
 		const Node& first() const;
 		const Node& second() const;
 
-		friend YAML_CPP_API bool operator == (const Iterator& it, const Iterator& jt);
-		friend YAML_CPP_API bool operator != (const Iterator& it, const Iterator& jt);
+		friend YAML_0_3_CPP_API bool operator == (const Iterator& it, const Iterator& jt);
+		friend YAML_0_3_CPP_API bool operator != (const Iterator& it, const Iterator& jt);
 
 	private:
 		std::auto_ptr<IterPriv> m_pData;

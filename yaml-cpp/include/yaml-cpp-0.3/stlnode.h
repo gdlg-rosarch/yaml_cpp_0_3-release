@@ -9,7 +9,7 @@
 #include <vector>
 #include <map>
 
-namespace YAML
+namespace YAML_0_3
 {
 	template <typename T>
 	void operator >> (const Node& node, std::vector<T>& v)

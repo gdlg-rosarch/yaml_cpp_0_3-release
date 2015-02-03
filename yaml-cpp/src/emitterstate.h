@@ -14,7 +14,7 @@
 #include <stack>
 #include <memory>
 
-namespace YAML
+namespace YAML_0_3
 {
 	enum FMT_SCOPE {
 		LOCAL,

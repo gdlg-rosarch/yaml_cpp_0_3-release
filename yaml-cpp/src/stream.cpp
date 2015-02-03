@@ -2,8 +2,8 @@
 #include <iostream>
 #include "exp.h"
 
-#ifndef YAML_PREFETCH_SIZE
-#define YAML_PREFETCH_SIZE 2048
+#ifndef YAML_0_3_PREFETCH_SIZE
+#define YAML_0_3_PREFETCH_SIZE 2048
 #endif
 
 #define S_ARRAY_SIZE( A ) (sizeof(A)/sizeof(*(A)))
@@ -11,7 +11,7 @@
 
 #define CP_REPLACEMENT_CHARACTER (0xFFFD)
 
-namespace YAML
+namespace YAML_0_3
 {
 	enum UtfIntroState {
 		uis_start,
@@ -179,7 +179,7 @@ namespace YAML
 
 	Stream::Stream(std::istream& input)
 		: m_input(input),
-		m_pPrefetched(new unsigned char[YAML_PREFETCH_SIZE]), 
+		m_pPrefetched(new unsigned char[YAML_0_3_PREFETCH_SIZE]), 
 		m_nPrefetchedAvailable(0), m_nPrefetchedUsed(0)
 	{
 		typedef std::istream::traits_type char_traits;
@@ -188,7 +188,7 @@ namespace YAML
 			return;
 
 		// Determine (or guess) the character-set by reading the BOM, if any.  See
-		// the YAML specification for the determination algorithm.
+		// the YAML_0_3 specification for the determination algorithm.
 		char_traits::int_type intro[4];
 		int nIntroUsed = 0;
 		UtfIntroState state = uis_start;
@@ -401,7 +401,7 @@ namespace YAML
 		{
 			std::streambuf *pBuf = m_input.rdbuf();
 			m_nPrefetchedAvailable = pBuf->sgetn(ReadBuffer(m_pPrefetched), 
-				YAML_PREFETCH_SIZE);
+				YAML_0_3_PREFETCH_SIZE);
 			m_nPrefetchedUsed = 0;
 			if (!m_nPrefetchedAvailable)
 			{
