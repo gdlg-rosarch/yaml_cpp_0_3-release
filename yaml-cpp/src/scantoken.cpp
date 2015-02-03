@@ -7,7 +7,7 @@
 #include "tag.h"
 #include <sstream>
 
-namespace YAML
+namespace YAML_0_3
 {
 	///////////////////////////////////////////////////////////////////////
 	// Specialization for scanning specific tokens

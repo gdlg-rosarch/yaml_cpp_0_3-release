@@ -7,7 +7,7 @@
 
 #include <cstddef>
 
-namespace YAML
+namespace YAML_0_3
 {
 	typedef std::size_t anchor_t;
 	const anchor_t NullAnchor = 0;

@@ -8,17 +8,17 @@
 
 #include "yaml-cpp-0.3/dll.h"
 
-namespace YAML
+namespace YAML_0_3
 {
 	class Node;
 	
-	struct YAML_CPP_API _Null {};
+	struct YAML_0_3_CPP_API _Null {};
 	inline bool operator == (const _Null&, const _Null&) { return true; }
 	inline bool operator != (const _Null&, const _Null&) { return false; }
 	
-	YAML_CPP_API bool IsNull(const Node& node); // old API only
+	YAML_0_3_CPP_API bool IsNull(const Node& node); // old API only
 	
-	extern YAML_CPP_API _Null Null;
+	extern YAML_0_3_CPP_API _Null Null;
 }
 
 #endif // NULL_H_62B23520_7C8E_11DE_8A39_0800200C9A66

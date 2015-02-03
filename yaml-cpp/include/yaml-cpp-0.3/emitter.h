@@ -16,11 +16,11 @@
 #include <string>
 #include <sstream>
 
-namespace YAML
+namespace YAML_0_3
 {
 	class EmitterState;
 	
-	class YAML_CPP_API Emitter: private noncopyable
+	class YAML_0_3_CPP_API Emitter: private noncopyable
 	{
 	public:
 		Emitter();
