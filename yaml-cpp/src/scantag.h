@@ -9,7 +9,7 @@
 #include <string>
 #include "stream.h"
 
-namespace YAML
+namespace YAML_0_3
 {
 	const std::string ScanVerbatimTag(Stream& INPUT);
 	const std::string ScanTagHandle(Stream& INPUT, bool& canBeHandle);

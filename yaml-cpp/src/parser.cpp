@@ -11,7 +11,7 @@
 #include <sstream>
 #include <cstdio>
 
-namespace YAML
+namespace YAML_0_3
 {
 	Parser::Parser()
 	{
@@ -91,7 +91,7 @@ namespace YAML
 
 	void Parser::HandleDirective(const Token& token)
 	{
-		if(token.value == "YAML")
+		if(token.value == "YAML_0_3")
 			HandleYamlDirective(token);
 		else if(token.value == "TAG")
 			HandleTagDirective(token);
@@ -102,20 +102,20 @@ namespace YAML
 	void Parser::HandleYamlDirective(const Token& token)
 	{
 		if(token.params.size() != 1)
-			throw ParserException(token.mark, ErrorMsg::YAML_DIRECTIVE_ARGS);
+			throw ParserException(token.mark, ErrorMsg::YAML_0_3_DIRECTIVE_ARGS);
 		
 		if(!m_pDirectives->version.isDefault)
-			throw ParserException(token.mark, ErrorMsg::REPEATED_YAML_DIRECTIVE);
+			throw ParserException(token.mark, ErrorMsg::REPEATED_YAML_0_3_DIRECTIVE);
 
 		std::stringstream str(token.params[0]);
 		str >> m_pDirectives->version.major;
 		str.get();
 		str >> m_pDirectives->version.minor;
 		if(!str || str.peek() != EOF)
-			throw ParserException(token.mark, std::string(ErrorMsg::YAML_VERSION) + token.params[0]);
+			throw ParserException(token.mark, std::string(ErrorMsg::YAML_0_3_VERSION) + token.params[0]);
 
 		if(m_pDirectives->version.major > 1)
-			throw ParserException(token.mark, ErrorMsg::YAML_MAJOR_VERSION);
+			throw ParserException(token.mark, ErrorMsg::YAML_0_3_MAJOR_VERSION);
 
 		m_pDirectives->version.isDefault = false;
 		// TODO: warning on major == 1, minor > 2?

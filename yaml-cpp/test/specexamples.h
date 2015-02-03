@@ -425,14 +425,14 @@ namespace Test {
 		"--- \"foo\"";
 		
 		const char *ex6_14 =
-		"%YAML 1.3 # Attempt parsing\n"
+		"%YAML_0_3 1.3 # Attempt parsing\n"
 		"           # with a warning\n"
 		"---\n"
 		"\"foo\"";
 		
 		const char *ex6_15 =
-		"%YAML 1.2\n"
-		"%YAML 1.1\n"
+		"%YAML_0_3 1.2\n"
+		"%YAML_0_3 1.1\n"
 		"foo";
 		
 		const char *ex6_16 =
@@ -645,7 +645,7 @@ namespace Test {
 		"]";
 		
 		const char *ex7_21 =
-		"- [ YAML : separate ]\n"
+		"- [ YAML_0_3 : separate ]\n"
 		"- [ : empty key entry ]\n"
 		"- [ {JSON: like}:adjacent ]";
 		

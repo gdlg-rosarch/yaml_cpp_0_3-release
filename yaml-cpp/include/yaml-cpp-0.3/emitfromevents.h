@@ -8,7 +8,7 @@
 #include "yaml-cpp-0.3/eventhandler.h"
 #include <stack>
 
-namespace YAML
+namespace YAML_0_3
 {
 	class Emitter;
 	

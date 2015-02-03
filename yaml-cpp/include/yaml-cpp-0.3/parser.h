@@ -11,7 +11,7 @@
 #include <ios>
 #include <memory>
 
-namespace YAML
+namespace YAML_0_3
 {
 	struct Directives;
 	struct Mark;
@@ -20,7 +20,7 @@ namespace YAML
 	class Node;
 	class Scanner;
 
-	class YAML_CPP_API Parser: private noncopyable
+	class YAML_0_3_CPP_API Parser: private noncopyable
 	{
 	public:
 		Parser();

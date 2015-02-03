@@ -12,7 +12,7 @@
 #include <string>
 #include <sstream>
 
-namespace YAML
+namespace YAML_0_3
 {
 	// traits for conversion
 	
@@ -30,8 +30,8 @@ namespace YAML
 		return true;
 	}
 	
-	YAML_CPP_API bool Convert(const std::string& input, bool& output);
-	YAML_CPP_API bool Convert(const std::string& input, _Null& output);
+	YAML_0_3_CPP_API bool Convert(const std::string& input, bool& output);
+	YAML_0_3_CPP_API bool Convert(const std::string& input, _Null& output);
 	
 	inline bool IsInfinity(const std::string& input) {
 		return input == ".inf" || input == ".Inf" || input == ".INF" || input == "+.inf" || input == "+.Inf" || input == "+.INF";

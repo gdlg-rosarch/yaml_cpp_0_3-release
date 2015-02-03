@@ -7,10 +7,10 @@
 
 #include "yaml-cpp-0.3/dll.h"
 
-namespace YAML
+namespace YAML_0_3
 {
 	// this is basically boost::noncopyable
-	class YAML_CPP_API noncopyable
+	class YAML_0_3_CPP_API noncopyable
 	{
 	protected:
 		noncopyable() {}
