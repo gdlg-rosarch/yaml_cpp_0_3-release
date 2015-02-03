@@ -6,7 +6,7 @@
 #endif
 
 
-namespace YAML
+namespace YAML_0_3
 {
 	class Node;
 

@@ -1,6 +1,6 @@
 #include "regex.h"
 
-namespace YAML
+namespace YAML_0_3
 {
 	// constructors
 	RegEx::RegEx(): m_op(REGEX_EMPTY)

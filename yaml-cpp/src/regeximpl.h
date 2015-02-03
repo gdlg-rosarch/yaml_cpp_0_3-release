@@ -10,7 +10,7 @@
 #include "stringsource.h"
 #include "streamcharsource.h"
 
-namespace YAML
+namespace YAML_0_3
 {
 	// query matches
 	inline bool RegEx::Matches(char ch) const {

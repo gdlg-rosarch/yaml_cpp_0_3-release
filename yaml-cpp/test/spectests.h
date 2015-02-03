@@ -167,10 +167,10 @@ namespace Test {
 		TEST ReservedDirectives();
 		
 		// 6.14
-		TEST YAMLDirective();
+		TEST YAML_0_3Directive();
 		
 		// 6.15
-		TEST InvalidRepeatedYAMLDirective();
+		TEST InvalidRepeatedYAML_0_3Directive();
 		
 		// 6.16
 		TEST TagDirective();

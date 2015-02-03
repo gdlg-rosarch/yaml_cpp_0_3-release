@@ -9,7 +9,7 @@
 #include "yaml-cpp-0.3/nodeutil.h"
 #include <cassert>
 
-namespace YAML
+namespace YAML_0_3
 {
 	// implementation of templated things
 	template <typename T>
