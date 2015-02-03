@@ -1,0 +1,12 @@
+Source: ros-indigo-yaml-cpp-0-3
+Section: misc
+Priority: extra
+Maintainer: Daniel Stonier <d.stonier@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-indigo-catkin
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-indigo-yaml-cpp-0-3
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, 
+Description: Legacy version of yaml cpp without boost, namespaced to avoid system conflicts.
