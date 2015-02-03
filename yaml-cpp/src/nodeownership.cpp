@@ -1,7 +1,7 @@
 #include "nodeownership.h"
 #include "yaml-cpp-0.3/node.h"
 
-namespace YAML
+namespace YAML_0_3
 {
 	NodeOwnership::NodeOwnership(NodeOwnership *pOwner): m_pOwner(pOwner)
 	{
