@@ -8,9 +8,9 @@
 
 #include "yaml-cpp-0.3/dll.h"
 
-namespace YAML
+namespace YAML_0_3
 {
-	struct YAML_CPP_API Mark {
+	struct YAML_0_3_CPP_API Mark {
 		Mark(): pos(0), line(0), column(0) {}
 		
 		static const Mark null() { return Mark(-1, -1, -1); }

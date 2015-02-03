@@ -12,7 +12,7 @@
 #include <map>
 #include <memory>
 
-namespace YAML
+namespace YAML_0_3
 {
 	struct Directives;
 	struct Mark;

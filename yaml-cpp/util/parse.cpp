@@ -17,34 +17,34 @@ Params ParseArgs(int argc, char **argv) {
 	return p;
 }
 
-class NullEventHandler: public YAML::EventHandler
+class NullEventHandler: public YAML_0_3::EventHandler
 {
 public:
-	virtual void OnDocumentStart(const YAML::Mark&) {}
+	virtual void OnDocumentStart(const YAML_0_3::Mark&) {}
 	virtual void OnDocumentEnd() {}
 	
-	virtual void OnNull(const YAML::Mark&, YAML::anchor_t) {}
-	virtual void OnAlias(const YAML::Mark&, YAML::anchor_t) {}
-	virtual void OnScalar(const YAML::Mark&, const std::string&, YAML::anchor_t, const std::string&) {}
+	virtual void OnNull(const YAML_0_3::Mark&, YAML_0_3::anchor_t) {}
+	virtual void OnAlias(const YAML_0_3::Mark&, YAML_0_3::anchor_t) {}
+	virtual void OnScalar(const YAML_0_3::Mark&, const std::string&, YAML_0_3::anchor_t, const std::string&) {}
 	
-	virtual void OnSequenceStart(const YAML::Mark&, const std::string&, YAML::anchor_t) {}
+	virtual void OnSequenceStart(const YAML_0_3::Mark&, const std::string&, YAML_0_3::anchor_t) {}
 	virtual void OnSequenceEnd() {}
 	
-	virtual void OnMapStart(const YAML::Mark&, const std::string&, YAML::anchor_t) {}
+	virtual void OnMapStart(const YAML_0_3::Mark&, const std::string&, YAML_0_3::anchor_t) {}
 	virtual void OnMapEnd() {}
 };
 
 void parse(std::istream& input)
 {
 	try {
-		YAML::Parser parser(input);
-		YAML::Node doc;
+		YAML_0_3::Parser parser(input);
+		YAML_0_3::Node doc;
 		while(parser.GetNextDocument(doc)) {
-			YAML::Emitter emitter;
+			YAML_0_3::Emitter emitter;
 			emitter << doc;
 			std::cout << emitter.c_str() << "\n";
 		}
-	} catch(const YAML::Exception& e) {
+	} catch(const YAML_0_3::Exception& e) {
 		std::cerr << e.what() << "\n";
 	}
 }

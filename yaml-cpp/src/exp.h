@@ -11,7 +11,7 @@
 #include <ios>
 #include "stream.h"
 
-namespace YAML
+namespace YAML_0_3
 {
 	////////////////////////////////////////////////////////////////////////////////
 	// Here we store a bunch of expressions for matching different parts of the file.
@@ -59,7 +59,7 @@ namespace YAML
 			static const RegEx e = Digit() || RegEx('A', 'F') || RegEx('a', 'f');
 			return e;
 		}
-		// Valid Unicode code points that are not part of c-printable (YAML 1.2, sec. 5.1)
+		// Valid Unicode code points that are not part of c-printable (YAML_0_3 1.2, sec. 5.1)
 		inline const RegEx& NotPrintable() {
 			static const RegEx e = RegEx(0) || 
 				RegEx("\x01\x02\x03\x04\x05\x06\x07\x08\x0B\x0C\x7F", REGEX_OR) || 

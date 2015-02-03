@@ -1,6 +1,6 @@
 <package>
   <name>yaml_cpp_0_3</name>
-  <version>0.3.0</version>
+  <version>0.3.1</version>
   <description>
      Legacy version of yaml cpp without boost, namespaced to avoid system conflicts.
   </description>

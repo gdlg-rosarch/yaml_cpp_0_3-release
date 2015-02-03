@@ -4,7 +4,7 @@
 #include <cassert>
 #include <stdexcept>
 
-namespace YAML
+namespace YAML_0_3
 {
 	Tag::Tag(const Token& token): type(static_cast<TYPE>(token.data))
 	{
