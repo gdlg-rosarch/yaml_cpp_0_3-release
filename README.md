@@ -1,3 +1,26 @@
+## yaml_cpp_0_3 (kinetic) - 0.3.1-0
+
+The packages in the `yaml_cpp_0_3` repository were released into the `kinetic` distro by running `/usr/bin/bloom-release --track kinetic --rosdistro kinetic yaml_cpp_0_3` on `Tue, 24 Jan 2017 07:52:55 -0000`
+
+The `yaml_cpp_0_3` package was released.
+
+Version of package(s) in repository `yaml_cpp_0_3`:
+
+- upstream repository: https://github.com/stonier/yaml_cpp_0_3.git
+- release repository: unknown
+- rosdistro version: `null`
+- old version: `null`
+- new version: `0.3.1-0`
+
+Versions of tools used:
+
+- bloom version: `0.5.23`
+- catkin_pkg version: `0.2.10`
+- rosdep version: `0.11.5`
+- rosdistro version: `0.5.0`
+- vcstools version: `0.1.39`
+
+
 ## yaml_cpp_0_3 (indigo) - 0.3.1-0
 
 The packages in the `yaml_cpp_0_3` repository were released into the `indigo` distro by running `/usr/bin/bloom-release --track indigo --rosdistro indigo yaml_cpp_0_3` on `Tue, 03 Feb 2015 01:56:38 -0000`
