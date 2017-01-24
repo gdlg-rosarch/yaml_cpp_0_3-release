@@ -1,0 +1,13 @@
+ros-kinetic-yaml-cpp-0-3 (0.3.1-0wily) wily; urgency=high
+
+  * refactored the actual library namespace (previously just renamed the library)
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Mon, 02 Feb 2015 15:00:00 -0000
+
+ros-kinetic-yaml-cpp-0-3 (0.3.0-0wily) wily; urgency=high
+
+  * renamespaced library and headers (yaml->yaml-0.3) to avoid system v0.5 conflict
+
+ -- Daniel Stonier <d.stonier@gmail.com>  Sun, 01 Feb 2015 15:00:00 -0000
+
+
